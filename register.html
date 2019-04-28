@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<div class="col-md-6 col-md-offset-3">
+<h2 style="text-align:center;color:blue">Register</h2>
+<form name="form" ng-submit="vm.register()" role="form">
+<div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
+<label for="username">First name</label>
+<input type="text" name="firstName" id="firstName" class="form-control" ng-model="vm.user.firstName" required />
+<span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block">First name is required</span>
+</div>
+<div class="form-group" ng-class="{ 'has-error': form.lastName.$dirty && form.lastName.$error.required }">
+<label for="username">Last name</label>
+<input type="text" name="lastName" id="lastName" class="form-control" ng-model="vm.user.lastName" required />
+<span ng-show="form.lastName.$dirty && form.lastName.$error.required" class="help-block">Last name is required</span>
+</div>
+<div class="form-group" ng-class="{ 'has-error': form.address.$dirty && form.address.$error.required }">
+    <label for="username">Address</label>
+    <input type="text" name="address" id="address" class="form-control" ng-model="vm.user.address" required />
+    <span ng-show="form.address.$dirty && form.address.$error.required" class="help-block">Address is required</span>
+    </div>
+    <div class="form-group" ng-class="{ 'has-error': form.city.$dirty && form.city.$error.required }">
+            <label for="username">City</label>
+            <input type="text" name="city" id="city" class="form-control" ng-model="vm.user.city" required />
+            <span ng-show="form.city.$dirty && form.city.$error.required" class="help-block">City is required</span>
+            </div>
+        <div class="form-group" ng-class="{ 'has-error': form.state.$dirty && form.state.$error.required }">
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" class="form-control" ng-model="vm.user.state" required />
+            <span ng-show="form.state.$dirty && form.state.$error.required" class="help-block">State is required</span>
+            </div>
+<div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+<label for="username">Username</label>
+<input type="text" name="username" id="username" class="form-control" ng-model="vm.user.username" required />
+<span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+</div>
+<div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+<label for="password">Password</label>
+<input type="password" name="password" id="password" class="form-control" ng-model="vm.user.password" required />
+<span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+</div>
+<div class="form-actions">
+<button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Register</button>
+<img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+<a href="#!/" class="btn btn-link">Cancel</a>
+</div>
+</form>
+</div>

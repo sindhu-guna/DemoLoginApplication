@@ -1,0 +1,20 @@
+<!--home.html-->
+<div class="col-md-6 col-md-offset-3">
+    <h2 style="text-align:center;color:blue">Home</h2>
+    <div align="right"><a href="#!/">Logout</a></div>
+    <h3>Hi {{vm.currentUser.firstName + " " + vm.currentUser.lastName}}</h3>
+    <div>You are logged in successfuly!!!
+        <br/>
+        <h4 style="color:#00a3cc">Please refer your below details:</h4>
+        <table class = "table table-striped table-bordered table-hover">
+                <tbody>
+                <tr><td>First Name</td><td>{{ vm.currentUser.firstName }}</td></tr>
+                <tr><td>Last Name</td><td>{{ vm.currentUser.lastName }}</td></tr>
+                <tr><td>Username</td><td>{{ vm.currentUser.username }}</td></tr>
+                <tr><td>Address</td><td>{{ vm.currentUser.address }}</td></tr>
+                <tr><td>City</td><td>{{ vm.currentUser.city }}</td></tr>
+                <tr><td>State</td><td>{{ vm.currentUser.state }}</td></tr>
+                </tbody>
+                </table>
+    </div>
+    </div>
